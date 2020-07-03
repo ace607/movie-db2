@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movie_cell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="movie_db2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="96" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oti-er-uZW">
+                        <rect key="frame" x="0.0" y="0.0" width="96" height="128"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oti-er-uZW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EbG-Fk-5cH"/>
+                <constraint firstItem="oti-er-uZW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jE7-nV-uGh"/>
+                <constraint firstAttribute="trailing" secondItem="oti-er-uZW" secondAttribute="trailing" id="sWi-c1-fHf"/>
+                <constraint firstAttribute="bottom" secondItem="oti-er-uZW" secondAttribute="bottom" id="ygk-0R-xed"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="photo" destination="oti-er-uZW" id="LuB-uN-Cz4"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="144.64285714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

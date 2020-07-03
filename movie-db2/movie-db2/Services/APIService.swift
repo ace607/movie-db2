@@ -42,7 +42,7 @@ struct APIService {
                 let decoder = JSONDecoder()
                 let moviesResponse = try decoder.decode(MoviesResponse.self, from: data)
                 
-                let number = Int.random(in: 0 ... 20)
+                let number = Int.random(in: 0..<moviesResponse.movies.count)
                 completion(moviesResponse.movies[number])
                 
             } catch {print(error)}
