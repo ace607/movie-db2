@@ -14,6 +14,8 @@
 		84E603A524AF3467009B6CAD /* movie_db2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84E603A324AF3467009B6CAD /* movie_db2.xcdatamodeld */; };
 		84E603A724AF3472009B6CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E603A624AF3472009B6CAD /* Assets.xcassets */; };
 		84E603AA24AF3472009B6CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E603A824AF3472009B6CAD /* LaunchScreen.storyboard */; };
+		D859F28D24AF3846001CD4CA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859F28C24AF3846001CD4CA /* Movie.swift */; };
+		D859F29024AF3857001CD4CA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859F28F24AF3857001CD4CA /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		84E603A624AF3472009B6CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E603A924AF3472009B6CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E603AB24AF3472009B6CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D859F28C24AF3846001CD4CA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D859F28F24AF3857001CD4CA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		84E6039924AF3467009B6CAD /* movie-db2 */ = {
 			isa = PBXGroup;
 			children = (
+				D859F28E24AF384B001CD4CA /* Services */,
+				D859F28B24AF383B001CD4CA /* Models */,
 				84E6039A24AF3467009B6CAD /* AppDelegate.swift */,
 				84E6039C24AF3467009B6CAD /* SceneDelegate.swift */,
 				84E6039E24AF3467009B6CAD /* ViewController.swift */,
@@ -68,6 +74,22 @@
 				84E603A324AF3467009B6CAD /* movie_db2.xcdatamodeld */,
 			);
 			path = "movie-db2";
+			sourceTree = "<group>";
+		};
+		D859F28B24AF383B001CD4CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D859F28C24AF3846001CD4CA /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D859F28E24AF384B001CD4CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D859F28F24AF3857001CD4CA /* APIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +167,8 @@
 				84E603A524AF3467009B6CAD /* movie_db2.xcdatamodeld in Sources */,
 				84E6039B24AF3467009B6CAD /* AppDelegate.swift in Sources */,
 				84E6039D24AF3467009B6CAD /* SceneDelegate.swift in Sources */,
+				D859F29024AF3857001CD4CA /* APIService.swift in Sources */,
+				D859F28D24AF3846001CD4CA /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
