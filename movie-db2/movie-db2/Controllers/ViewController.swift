@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     var movies = [Movie]()
     var topMovie: Movie?
+    var selectedMovie : Movie?
+    var genres = [Genre]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,7 @@ class ViewController: UIViewController {
         
         movieCollection.register(UINib(nibName: "HeaderCollectionViewCell", bundle: Bundle.main), forCellWithReuseIdentifier: "header_cell")
         movieCollection.register(UINib(nibName: "MovieCollectionViewCell", bundle: Bundle.main), forCellWithReuseIdentifier: "movie_cell")
+        
         
         
         apiService.getPopularMovies { (movies) in
@@ -43,6 +47,18 @@ class ViewController: UIViewController {
                 self.movieCollection.reloadData()
             }
         }
+        
+        apiService.getGenres { (genresResponse) in
+            self.genres.append(contentsOf: genresResponse.genres)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let id = segue.identifier, id == "segue_for_detailed_page" {
+            if let DetailVC = segue.destination as? DetailedViewController {
+                DetailVC.selectedMovie = selectedMovie
+            }
+        }
     }
 
 
@@ -51,6 +67,10 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedMovie = movies[indexPath.row + 1]
+        performSegue(withIdentifier: "segue_for_detailed_page", sender: nil)
+    }
 }
 
 extension ViewController: UICollectionViewDataSource {
@@ -62,7 +82,7 @@ extension ViewController: UICollectionViewDataSource {
         if section == 0 {
             return topMovie != nil ? 1 : 0
         }
-        return movies.count
+        return movies.count - 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -73,12 +93,24 @@ extension ViewController: UICollectionViewDataSource {
             cell.ratingLabel.text = String(topMovie!.imdb)
             
             for (index, item) in cell.ratingStackView.subviews.enumerated() {
-                if index <= Int(topMovie!.imdb/2) {
+                if index <= Int(round(topMovie!.imdb)/2) {
                     (item as! UIImageView).image = UIImage(systemName: "star.fill")
                 } else {
                     (item as! UIImageView).image = UIImage(systemName: "star")
                 }
             }
+            
+            var genre = ""
+            
+            for i in topMovie!.genreIDS{
+                for j in stride(from: 0, to: genres.count, by: 1){
+                    if i == genres[j].id{
+                        genre = genre + genres[j].name + "  |  "
+                    }
+                }
+            }
+            cell.genres.text = String(genre.dropLast(5))
+
             
             topMovie!.posterURL.downloadImage(completion: { (img) in
                 DispatchQueue.main.async {
@@ -92,7 +124,7 @@ extension ViewController: UICollectionViewDataSource {
         if indexPath.section == 1 {
             let cell = movieCollection.dequeueReusableCell(withReuseIdentifier: "movie_cell", for: indexPath) as! MovieCollectionViewCell
             
-            movies[indexPath.row].posterURL.downloadImage(completion: { (img) in
+            movies[indexPath.row + 1].posterURL.downloadImage(completion: { (img) in
                 DispatchQueue.main.async {
                     cell.photo.image = img
                 }
@@ -115,7 +147,7 @@ extension ViewController: UICollectionViewDataSource {
 //        }
 //        fatalError()
 //
-//    }
+//    }s
     
     
 }

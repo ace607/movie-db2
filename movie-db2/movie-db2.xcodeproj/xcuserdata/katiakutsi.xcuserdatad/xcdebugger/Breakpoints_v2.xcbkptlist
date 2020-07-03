@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F8FA774F-4F77-441D-92D6-34C358558DEC"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CCB494B9-E568-4703-AA26-445A5BCF7150"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "movie-db2/Controllers/DetailedViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "DetailedViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CCB494B9-E568-4703-AA26-445A5BCF7150 - 10f251e74765c5e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "movie_db2.DetailedViewController.selectedMovie.getter : Swift.Optional&lt;movie_db2.Movie&gt;"
+                  moduleName = "movie-db2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/A/Desktop/Competition/movie-db2/movie-db2/movie-db2/Controllers/DetailedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "254">
+               </Location>
+               <Location
+                  uuid = "CCB494B9-E568-4703-AA26-445A5BCF7150 - 971209b6fa1bb1ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "movie_db2.DetailedViewController.selectedMovie.setter : Swift.Optional&lt;movie_db2.Movie&gt;"
+                  moduleName = "movie-db2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/A/Desktop/Competition/movie-db2/movie-db2/movie-db2/Controllers/DetailedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "CCB494B9-E568-4703-AA26-445A5BCF7150 - 2f3638974fa86ade"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "movie_db2.DetailedViewController.selectedMovie.modify : Swift.Optional&lt;movie_db2.Movie&gt;"
+                  moduleName = "movie-db2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/A/Desktop/Competition/movie-db2/movie-db2/movie-db2/Controllers/DetailedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "CCB494B9-E568-4703-AA26-445A5BCF7150 - 9cdb87248be1d9ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "movie_db2.DetailedViewController.selectedMovie.modify : Swift.Optional&lt;movie_db2.Movie&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "movie-db2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/A/Desktop/Competition/movie-db2/movie-db2/movie-db2/Controllers/DetailedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "CCB494B9-E568-4703-AA26-445A5BCF7150 - ae889c5986f76f2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "movie_db2.DetailedViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; movie_db2.DetailedViewController"
+                  moduleName = "movie-db2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/A/Desktop/Competition/movie-db2/movie-db2/movie-db2/Controllers/DetailedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "393">
+               </Location>
+               <Location
+                  uuid = "CCB494B9-E568-4703-AA26-445A5BCF7150 - 1ec01ccb7542ba64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "movie_db2.DetailedViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;movie_db2.DetailedViewController&gt;"
+                  moduleName = "movie-db2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/A/Desktop/Competition/movie-db2/movie-db2/movie-db2/Controllers/DetailedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "334">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5396C2E1-EE69-4CF3-94E6-BDD96FC7952F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "movie-db2/Controllers/DetailedViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F36A7072-FA5E-4871-95A6-441E6F2A45DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "movie-db2/Controllers/DetailedViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "529ECF40-28B8-4A85-B166-4F3804BBA595"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "movie-db2/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADCA87E5-E2E3-4A22-9D42-795B3A4A94B1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "movie-db2/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22AFE2E1-6FC4-496F-86FD-1D4C3B26B265"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "movie-db2/Controllers/DetailedViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "22AFE2E1-6FC4-496F-86FD-1D4C3B26B265 - 39a07582cba934ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in movie_db2.DetailedViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "movie-db2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/A/Desktop/Competition/movie-db2/movie-db2/movie-db2/Controllers/DetailedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "158">
+               </Location>
+               <Location
+                  uuid = "22AFE2E1-6FC4-496F-86FD-1D4C3B26B265 - 16558dc6cf020e71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in movie_db2.DetailedViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "movie-db2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/A/Desktop/Competition/movie-db2/movie-db2/movie-db2/Controllers/DetailedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -12,6 +12,7 @@ class HeaderCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var ratingStackView: UIStackView!
+    @IBOutlet weak var genres: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

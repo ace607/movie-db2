@@ -9,6 +9,7 @@
 import Foundation
 
 struct Movie: Codable {
+    let id: Int
     let poster: String
     var posterURL: String {
         return "https://image.tmdb.org/t/p/w500/\(poster)"
@@ -19,6 +20,7 @@ struct Movie: Codable {
     let overview: String
 
     enum CodingKeys: String, CodingKey {
+        case id
         case poster = "poster_path"
         case title = "original_title"
         case genreIDS = "genre_ids"
@@ -33,4 +35,13 @@ struct MoviesResponse: Codable {
     enum CodingKeys: String, CodingKey {
         case movies = "results"
     }
+
+}
+struct Genre: Codable {
+    let id: Int
+    let name: String
+}
+
+struct GenresResponse: Codable{
+    let genres : [Genre]
 }
