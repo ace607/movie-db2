@@ -10,6 +10,9 @@ import Foundation
 
 struct Movie: Codable {
     let poster: String
+    var posterURL: String {
+        return "https://image.tmdb.org/t/p/w500/\(poster)"
+    }
     let title: String
     let genreIDS: [Int]
     let imdb: Double

@@ -14,6 +14,11 @@
 		84E603A524AF3467009B6CAD /* movie_db2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84E603A324AF3467009B6CAD /* movie_db2.xcdatamodeld */; };
 		84E603A724AF3472009B6CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E603A624AF3472009B6CAD /* Assets.xcassets */; };
 		84E603AA24AF3472009B6CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E603A824AF3472009B6CAD /* LaunchScreen.storyboard */; };
+		84E603B524AF66D4009B6CAD /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E603B324AF66D4009B6CAD /* HeaderCollectionViewCell.swift */; };
+		84E603B624AF66D4009B6CAD /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E603B424AF66D4009B6CAD /* HeaderCollectionViewCell.xib */; };
+		84E603BA24AF68D2009B6CAD /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E603B824AF68D2009B6CAD /* MovieCollectionViewCell.swift */; };
+		84E603BB24AF68D3009B6CAD /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E603B924AF68D2009B6CAD /* MovieCollectionViewCell.xib */; };
+		84E603BE24AF6AC6009B6CAD /* download+image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E603BD24AF6AC6009B6CAD /* download+image.swift */; };
 		D859F28D24AF3846001CD4CA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859F28C24AF3846001CD4CA /* Movie.swift */; };
 		D859F29024AF3857001CD4CA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859F28F24AF3857001CD4CA /* APIService.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +33,11 @@
 		84E603A624AF3472009B6CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E603A924AF3472009B6CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E603AB24AF3472009B6CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E603B324AF66D4009B6CAD /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		84E603B424AF66D4009B6CAD /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		84E603B824AF68D2009B6CAD /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		84E603B924AF68D2009B6CAD /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		84E603BD24AF6AC6009B6CAD /* download+image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "download+image.swift"; sourceTree = "<group>"; };
 		D859F28C24AF3846001CD4CA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D859F28F24AF3857001CD4CA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +72,8 @@
 		84E6039924AF3467009B6CAD /* movie-db2 */ = {
 			isa = PBXGroup;
 			children = (
+				84E603BC24AF6AA6009B6CAD /* Extensions */,
+				84E603B124AF66A3009B6CAD /* Cells */,
 				D859F28E24AF384B001CD4CA /* Services */,
 				D859F28B24AF383B001CD4CA /* Models */,
 				84E6039A24AF3467009B6CAD /* AppDelegate.swift */,
@@ -74,6 +86,41 @@
 				84E603A324AF3467009B6CAD /* movie_db2.xcdatamodeld */,
 			);
 			path = "movie-db2";
+			sourceTree = "<group>";
+		};
+		84E603B124AF66A3009B6CAD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84E603B724AF68C0009B6CAD /* MovieCell */,
+				84E603B224AF66BD009B6CAD /* HeaderCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84E603B224AF66BD009B6CAD /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				84E603B324AF66D4009B6CAD /* HeaderCollectionViewCell.swift */,
+				84E603B424AF66D4009B6CAD /* HeaderCollectionViewCell.xib */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		84E603B724AF68C0009B6CAD /* MovieCell */ = {
+			isa = PBXGroup;
+			children = (
+				84E603B824AF68D2009B6CAD /* MovieCollectionViewCell.swift */,
+				84E603B924AF68D2009B6CAD /* MovieCollectionViewCell.xib */,
+			);
+			path = MovieCell;
+			sourceTree = "<group>";
+		};
+		84E603BC24AF6AA6009B6CAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84E603BD24AF6AC6009B6CAD /* download+image.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D859F28B24AF383B001CD4CA /* Models */ = {
@@ -150,7 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E603BB24AF68D3009B6CAD /* MovieCollectionViewCell.xib in Resources */,
 				84E603AA24AF3472009B6CAD /* LaunchScreen.storyboard in Resources */,
+				84E603B624AF66D4009B6CAD /* HeaderCollectionViewCell.xib in Resources */,
 				84E603A724AF3472009B6CAD /* Assets.xcassets in Resources */,
 				84E603A224AF3467009B6CAD /* Main.storyboard in Resources */,
 			);
@@ -166,9 +215,12 @@
 				84E6039F24AF3467009B6CAD /* ViewController.swift in Sources */,
 				84E603A524AF3467009B6CAD /* movie_db2.xcdatamodeld in Sources */,
 				84E6039B24AF3467009B6CAD /* AppDelegate.swift in Sources */,
+				84E603B524AF66D4009B6CAD /* HeaderCollectionViewCell.swift in Sources */,
 				84E6039D24AF3467009B6CAD /* SceneDelegate.swift in Sources */,
 				D859F29024AF3857001CD4CA /* APIService.swift in Sources */,
 				D859F28D24AF3846001CD4CA /* Movie.swift in Sources */,
+				84E603BE24AF6AC6009B6CAD /* download+image.swift in Sources */,
+				84E603BA24AF68D2009B6CAD /* MovieCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
