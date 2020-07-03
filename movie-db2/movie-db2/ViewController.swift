@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         
         
-        print("AAAAAAAAAAAAAA agar minda tbc;დ au es rodis gamochnda aq :dddddd amas vchalichob მეგონა დაინახე ..... აქ არ იყო ?  ARAAAAA macade masteria mgoni es da imitom chans")
+        print("OOOOOOOOOOO")
     }
 
 
